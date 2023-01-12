@@ -1,17 +1,14 @@
 {
-  "name": "mern",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "engines": {
     "node": "14.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "dev": "nodemon app.js",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix site3 && npm run build --prefix site3"
-  },
+    "start": "node app.js",},
   "keywords": [],
   "author": "jay",
   "license": "ISC",
