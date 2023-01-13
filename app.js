@@ -3,6 +3,7 @@ const mongoose=require('mongoose')
 const express=require('express');
 const app=express();
 const cookieParser=require("cookie-parser")
+const BASE_URL = process.env.BASE_URL
 
 dotenv.config({path: './config.env'}); // for hiding personal data using env
 
