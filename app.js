@@ -2,11 +2,12 @@ const dotenv=require("dotenv")
 const mongoose=require('mongoose')
 const express=require('express');
 const app=express();
+app.use(cors());
 const cookieParser=require("cookie-parser")
 const BASE_URL = process.env.BASE_URL
 
 dotenv.config({path: './config.env'}); // for hiding personal data using env
-
+app.use(cors());
 app.use(express.json());
 const PORT=process.env.PORT || 8000;
 app.use(cookieParser());
