@@ -8,11 +8,11 @@ const cookieParser=require("cookie-parser")
 const BASE_URL = process.env.BASE_URL
 
 dotenv.config({path: './config.env'}); // for hiding personal data using env
-app.use(cors());
+app.use(cors({origin:"https://blog55.netlify.app/"}));
 app.use(express.json());
 const PORT=process.env.PORT || 8000;
 app.use(cookieParser());
-
+// https://blog55.netlify.app/
 // we link router files to make our route easy
 app.use(require('./router/auth'));
 
