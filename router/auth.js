@@ -12,7 +12,7 @@ const Data=require('../model/postSchema');
 
 router.post('/contactus',async(req,res)=>{
     const {name,email,phone,subject,message}=req.body;
-    // console.log(req.body)
+    console.log(req.body)
     try{
     if(!name|| !email|| !phone|| !subject|| !message){
         return res.status(422).json({error:"Please fill the field properly"})
