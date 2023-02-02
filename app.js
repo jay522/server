@@ -12,7 +12,6 @@ app.use(cors({origin:"*"}));
 app.use(express.json());
 const PORT=process.env.PORT || 8000;
 app.use(cookieParser());
-// https://blog55.netlify.app
 // we link router files to make our route easy
 app.use(require('./router/auth'));
 
